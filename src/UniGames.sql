@@ -68,7 +68,7 @@ CREATE TABLE premios (
                          id INT AUTO_INCREMENT PRIMARY KEY,
                          id_cliente INT,
                          valor DECIMAL(10, 2),
-                         data DATE NOT NULL DEFAULT CURRENT_DATE,
+                         data DATE NOT NULL DEFAULT (CURRENT_DATE),
                          FOREIGN KEY (id_cliente) REFERENCES cliente(id)
 );
 
